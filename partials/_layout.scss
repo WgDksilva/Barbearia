@@ -14,7 +14,6 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
     left: 0;
     top: 0;
     width: 100%;
@@ -26,9 +25,8 @@
     opacity: 0.9;
 }
 
-// -------------------------------------
-
-//   HERO  ------
+//-------------------------------------
+//   HERO  ----------------------------
 
 .hero {
     color: $white-normal;
@@ -40,14 +38,15 @@
     justify-content: center;
     padding: 14px;
 
-    h1{
+    h1 {
         text-align: center;
         line-height: 150%;
         max-width: 940px;
         font-size: 46px;
     }
 
-    p{
+    p {
+        font-size: 25px;
         text-align: center;
         margin: 14px 0;
     }
@@ -68,10 +67,11 @@
 }
 
 @keyframes scaleButton {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.07);
     }
 }
@@ -102,4 +102,73 @@
         font-size: 24px;
     }
 }
+
 // -----------------------------------------
+//   ABOUT  --------------------------------
+.about {
+    background-color: $black-dark;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px;
+
+    img {
+        max-width: 570px;
+    }
+}
+
+.about-content div {
+    flex: 1;
+}
+
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    P {
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .about-description {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-description {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+// -----------------------------------------
+//          --------------------------------

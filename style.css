@@ -5,6 +5,30 @@
   outline: 0;
 }
 
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.background video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.background::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(109deg, rgb(10, 12, 16) 15%, rgba(10, 12, 16, 0) 50%, rgb(10, 12, 16) 85%);
+}
+
 header {
   width: 100%;
 }
@@ -94,7 +118,6 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
   left: 0;
   top: 0;
   width: 100%;
@@ -122,6 +145,7 @@ i {
   font-size: 46px;
 }
 .hero p {
+  font-size: 25px;
   text-align: center;
   margin: 14px 0;
 }
@@ -168,6 +192,58 @@ i {
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
+  }
+}
+.about {
+  background-color: #161617;
+  overflow: hidden;
+  color: #FFF;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px;
+}
+.about-content img {
+  max-width: 570px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.about-description P {
+  margin-bottom: 14px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-content img {
+    max-width: 100%;
+  }
+  .about-description h2 {
+    font-size: 28px;
+  }
+  .about-description p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-description h2 {
+    font-size: 24px;
+  }
+  .about-description p {
+    font-size: 14px;
   }
 }
 body {
