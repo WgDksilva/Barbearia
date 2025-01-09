@@ -5,7 +5,7 @@ header {
     column-gap: 10px;
 
     max-width: 1440px;
-    padding: 10px 10px 0 10px;
+    padding: 10px 25px;
 }
 
 header img {
@@ -39,67 +39,7 @@ header img {
     background-color: $red-light;
 }
 
-
-
 /*
-header {
-    width: 100%;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-i {
-    color: $white-normal;
-}
-
-.header-icons {
-    display: flex;
-    gap: 14px;
-    margin-top: 20px;
-}
-
-.header-icons a:hover {
-    i {
-        animation: translateY 0.8s infinite alternate ;
-        color: $red-light;
-    }
-}
-
-@keyframes translateY {
-    from {
-        transform: translateY(0) scale(1);
-    }
-    to {
-        transform: translateY(-8px) scale(1.1);
-    }
-}
-
-.header-button {
-    border: 1px solid $white-normal;
-    padding: 8px 24px;
-    border-radius: 4px;
-    color: $white-normal;
-    background-color: transparent;
-    transition: background-color 0.8s;
-}
-
-.header-button:hover{
-    border: 1px solid $red-light;
-    background-color: $red-light;
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
-}
 
 @media screen and (max-width: 770px) {
     .header-content{

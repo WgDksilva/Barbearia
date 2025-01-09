@@ -1,71 +1,44 @@
-
-.container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 10px;
-
-    
-}
-
 //-------------------------------------
-//   HERO  ----------------------------
-/*
-align-items: center;
-    width: 100%;
-    color: $white-normal;
-    padding: 14px;
+//  CORPO  ----------------------------
 
-*/
 .hero {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px 0 10px 25px;
+  
     min-height: 80vh;
     max-width: 800px;
 
-    .logo1 {
+    .logo2 {
         width: 250px;
-        margin-right: 450px;
-        opacity: 0.5;
     }
 
-    p {
+    h1 {
         color: $white-normal;
         font-size: 25px;
         letter-spacing: 1px;
-        margin: 14px 14px;
-        opacity: 0.3;
+        margin: 0 2px;
+        opacity: 0.5;
+    }
+
+    h2 {
+        color: $white-normal;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    a {
+        padding: 14px 28px;
+        color: $white-normal;
+      
+        border-radius: 30px;
+        font-size: 18px;
+        margin-left: 170px;
     }
 }
 /*
-.button-contact {
-    padding: 14px 28px;
-    color: $white-normal;
-    background-color: $red-normal;
-    border: 0;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 14px 0;
-}
-
-.button-contact:hover {
-    animation: scaleButton 0.8s alternate infinite;
-}
-
-@keyframes scaleButton {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.07);
-    }
-}
-
 @media screen and (max-width: 768px) {
     .hero {
         min-height: 60vh;
@@ -94,19 +67,15 @@ align-items: center;
 }
 */
 // -----------------------------------------
-//   ABOUT  --------------------------------
-.about {
-    background-color: $black-dark;
-    overflow: hidden;
-    color: $white-normal;
-}
 
+//   ABOUT  --------------------------------
 .about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
     padding: 34px 14px;
+    
 
     img {
         max-width: 570px;
@@ -121,11 +90,16 @@ align-items: center;
     h2 {
         font-size: 38px;
         margin-bottom: 24px;
+        color: $white-normal;
+        opacity: 0.5;
     }
 
     P {
         margin-bottom: 14px;
         line-height: 150%;
+        color: $white-normal;
+        font-size: 25px;
+        opacity: 0.5;
     }
 }
 
